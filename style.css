@@ -1,0 +1,92 @@
+
+
+@keyframes changecolor {
+    0%{
+        background-color: #008cff; border-radius: 20%;
+     }
+     25%{
+        background-color: aqua; border-radius: 40%;
+     }
+     50%{
+        background-color: lightseagreen; border-radius: 80%;
+     }
+     75%{
+        background-color: lightgreen; border-radius: 40%;
+     }
+    100%{
+        background-color: green; border-radius: 20%;
+    }
+}
+@keyframes changecolor2 {
+    0%{
+        background-color: green; border-radius: 20%;
+     }
+     25%{
+        background-color: lightgreen; border-radius: 40%;
+     }
+     50%{
+        background-color: lightseagreen; border-radius: 80%;
+     }
+     75%{
+        background-color: aqua; border-radius: 40%;
+     }
+    100%{
+        background-color: #008cff; border-radius: 20%;
+    }
+}
+@keyframes border{
+    0%{
+         border-radius: 20%;
+     }
+     25%{
+         border-radius: 40%;
+     }
+     50%{
+         border-radius: 80%;
+     }
+     75%{
+      border-radius: 40%;
+     }
+    100%{
+       border-radius: 20%;
+    }
+}
+
+#animate{
+   
+    background-color: green;
+    width: 400px;
+    height: 400px;
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    position: absolute;
+   
+}
+#animate2{
+    
+    background-color: #008cff;
+    width: 200px;
+    height: 200px;
+    animation-name: changecolor2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    position: absolute;
+}
+#container{
+    margin: 0 auto;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+    border-radius: 100%;
+    animation-name: border;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
